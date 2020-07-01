@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cc5ec0b7b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <table name="textview">
+            <tr class="array">
+                <td colspan="4" class="resultat"></td>
+            </tr>
+            <tr class="num">
+                <td colspan="2"><input type="button" value="C" onclick="clean()"></td>
+                <td><input type="button" value="<" onclick="back()"></td>
+                <td class="signe"><input type="button" class="signe" value="÷" onclick="ajoutNum('/')"></td>
+            </tr>
+            <tr class="num">
+                <td><input type="button" value="7" class="number" onclick="ajoutNum(7)"></td>
+                <td><input type="button" value="8" class="number" onclick="ajoutNum(8)"></td>
+                <td><input type="button" value="9" class="number" onclick="ajoutNum(9)"></td>
+                <td class="signe"><input type="button" class="signe" value="X" onclick="ajoutNum('*')"></td>
+            </tr>
+            <tr class="num">
+                <td><input type="button" value="4" onclick="ajoutNum(4)"></td>
+                <td><input type="button" value="5" onclick="ajoutNum(5)"></td>
+                <td><input type="button" value="6" onclick="ajoutNum(6)"></td>
+                <td class="signe"><input type="button" class="signe" value="-" onclick="ajoutNum('-')"></td>
+            </tr>
+            <tr class="num">
+                <td><input type="button" value="1" onclick="ajoutNum(1)"></td>
+                <td><input type="button" value="2" onclick="ajoutNum(2)"></td>
+                <td><input type="button" value="3" onclick="ajoutNum(3)"></td>
+                <td class="signe"><input type="button" class="signe" value="+" onclick="ajoutNum('+')"></td>
+            </tr>
+            <tr class="num">
+                <td colspan="2"><input type="button" value="0" onclick="ajoutNum(0)"></td>
+                <td><input type="button" value="." onclick="ajoutNum('.')"></td>
+                <td class="signe"><input type="button" class="signe" value="=" onclick="equal()"></td>
+
+
+            </tr>
+        </table>
+   
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
